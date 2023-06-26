@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台中市公共圖書館 - 館區資訊</title>
+    <link rel="shortcut icon" href="../Images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/index.css">
+    <link rel="stylesheet" href="../Css/info.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../Funcs/info.js"></script>
+    <script src="../Funcs/menu.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initMap&v=weekly" async></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header_title">
+            <a href="../index.html"><img src="../Images/logo.png" alt="logo.png"></a>
+        </div>
+        <div class="header_nav">
+            <ul class="nol">
+                <li class="li_head"><a href="../index.html">首頁</a></li>
+                <li><a href="./info.html">館區資訊</a></li>
+                <li><a href="./rule.html">公共規章</a></li>
+                <li><a href="./about.html">關於我們</a></li>
+            </ul>
+        </div>
+        <div class="header_menu">
+            <svg viewBox="0 0 24 24">
+                <path d="M2.425 18.95V15.8h19.15v3.15Zm0-5.375v-3.15h19.15v3.15Zm0-5.375V5.05h19.15V8.2Z"/>
+            </svg>
+        </div>
+        <div class="header_menu_dropdown">
+            <a href="../index.html">首頁</a>
+            <hr>
+            <a href="./info.html">館區資訊</a>
+            <hr>
+            <a href="./rule.html">公共規章</a>
+            <hr>
+            <a href="./about.html">關於我們</a>
+        </div>
+    </div>
+    <div class="info_main">
+        <div class="row">
+            <div class="col-lg-8 info_main_map">
+                <div>
+                    <input type="text" id="search_0" placeholder="搜尋">
+                    <button class="info_btn" id="btn_0" style="position: absolute; right: 12px; top: -1px;">
+                        <svg viewBox="0 0 24 24">
+                            <path d="m19.55 21.95-6.475-6.475q-.725.5-1.687.8-.963.3-2.088.3-2.95 0-5.012-2.063Q2.225 12.45 2.225 9.5q0-2.95 2.063-5.013Q6.35 2.425 9.3 2.425q2.95 0 5.012 2.062Q16.375 6.55 16.375 9.5q0 1.15-.3 2.087-.3.938-.8 1.638l6.5 6.525ZM9.3 13.425q1.65 0 2.788-1.138 1.137-1.137 1.137-2.787t-1.137-2.788Q10.95 5.575 9.3 5.575T6.513 6.712Q5.375 7.85 5.375 9.5t1.138 2.787Q7.65 13.425 9.3 13.425Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="map"></div>
+            </div>
+            <div class="col-lg-4 info_main_info">
+                <div>
+                    <input type="text" id="search_1" placeholder="搜尋">
+                    <button class="info_btn" id="btn_1" style="position: absolute; right: 0; top: -1px;">
+                        <svg viewBox="0 0 24 24">
+                            <path d="m19.55 21.95-6.475-6.475q-.725.5-1.687.8-.963.3-2.088.3-2.95 0-5.012-2.063Q2.225 12.45 2.225 9.5q0-2.95 2.063-5.013Q6.35 2.425 9.3 2.425q2.95 0 5.012 2.062Q16.375 6.55 16.375 9.5q0 1.15-.3 2.087-.3.938-.8 1.638l6.5 6.525ZM9.3 13.425q1.65 0 2.788-1.138 1.137-1.137 1.137-2.787t-1.137-2.788Q10.95 5.575 9.3 5.575T6.513 6.712Q5.375 7.85 5.375 9.5t1.138 2.787Q7.65 13.425 9.3 13.425Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="info_img">
+                    <img id="info_main_img" src="../Images/lib_imgs/0.jpg" alt="library images">
+                </div>
+                <div class="info_info"><ul id="info_main_ul" class="nol"></ul></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col-sm-6"><a href="https://www.taichung.gov.tw/"><img src="../Images/taichung_gov.png" alt="taichung_gov.png"></a></div>
+            <div class="col-sm-6"><a href="https://www.culture.taichung.gov.tw/"><img src="../Images/taichung_bc.png" alt="taichung_bc.png"></a></div>
+        </div>
+        <div class="footer_end">
+            <label>Copyright &copy; 2022 何孟勳 林鴻璋</label>
+        </div>
+        <div style="height: 0px;"></div>
+    </div>
+</body>
+</html>

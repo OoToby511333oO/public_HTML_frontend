@@ -1,0 +1,220 @@
+* {
+    font-family: "consolas", "DFKai-sb";
+}
+
+* a {
+    text-decoration: none;
+    color: black;
+    transition: .35s;
+}
+* a:hover {
+    color: rgb(98, 176, 162);
+}
+* ul {
+    list-style: none;
+}
+
+* input {
+    height: 100%;
+    width: 100%;
+    padding: 0 5px;
+    border: solid 2px rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.1em;
+}
+
+* svg {
+    fill: currentColor;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+body {
+    padding: 20px;
+    min-width: 430px;
+}
+
+.nol {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 991px) {
+    .header .header_nav {
+        display: none !important;
+    }
+    .header .header_menu {
+        display: inherit !important;
+    }
+    
+    .main_menu a div {
+        height: 150px !important;
+    }
+}
+
+@media (max-width: 539px) {
+    .header .header_title img {
+        width: 250px !important;
+    }
+}
+
+.header {
+    height: 64px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header .header_nav {
+    position: absolute;
+    right: 0;
+}
+.header .header_nav ul {
+    display: flex;
+    flex-direction: row;
+}
+.header .header_nav ul li {
+    font-size: 1.3em;
+    text-align: center;
+    cursor: pointer;
+    border-right: solid 1px gray;
+    padding: 0 15px;
+}
+.header .header_menu {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+.header .header_menu svg {
+    height: 30px;
+    width: 30px;
+    transition: .35s;
+}
+.header .header_menu svg:hover {
+    color: #62b0a2;
+}
+.header .header_menu_dropdown {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    flex-direction: column;
+    z-index: 2;
+    background-color: #f2f2f2;
+    padding: 0 5px;
+    border: solid 2px gray;
+    border-radius: 5px;
+    display: none;
+}
+.header .header_menu_dropdown a {
+    font-size: 1.2em;
+    text-align: right;
+}
+.header .header_menu_dropdown hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.main_img {
+    height: calc(100% - 84px);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: 1s opacity ease-in-out;
+    transition-delay: 1s;
+}
+.slide > img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.activate {
+    opacity: 1 !important;
+    z-index: 1;
+    transition-delay: 0s;
+}
+
+.main_menu {
+    position: relative;
+}
+.main_menu a div {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgba(98, 176, 162, 0.8);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    transition: .35s;
+}
+.main_menu a div:hover {
+    background-color: #62b0a2;
+}
+.main_menu a:nth-child(even) div {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(98, 176, 162, 0.5);
+}
+.main_menu a:nth-child(even) div:hover {
+    background-color: #62b0a2;
+}
+.main_menu a:hover {
+    color: inherit;
+}
+.main_menu a div label {
+    width: 140px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.main_menu a:nth-child(odd) div label {
+    margin-right: 20px;
+}
+.main_menu a:nth-child(even) div label {
+    margin-left: 20px;
+}
+.main_menu a div > img {
+    height: 100%;
+    width: calc(100% - 160px);
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.footer div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.footer div img {
+    border-radius: 5px;
+    transition: .35s;
+}
+.footer div img:hover {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.footer .footer_end {
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: #1e1e1e;
+    color: #f2f2f2;
+    border-radius: 5px;
+}

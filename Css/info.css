@@ -1,0 +1,123 @@
+@media (max-width: 991px) {
+    .info_main {
+        height: calc(100% - 140px) !important;
+    }
+    .info_main_map input {
+        display: inherit !important;
+    }
+    .info_main_map button {
+        display: inherit !important;
+    }
+    .info_main_map #map {
+        height: calc(100% - 60px) !important;
+    }
+    .info_main_info {
+        height: 1000px !important;
+        grid-template-rows: 0 1fr 1fr !important;
+        gap: 0 !important;
+    }
+    .info_main_info input {
+        display: none;
+    }
+    .info_main_info .info_btn {
+        display: none;
+    }
+    .info_main_info .info_img {
+        margin-bottom: 20px;
+    }
+    .info_main_info .info_info {
+        height: 270px;
+    }
+
+    .footer {
+        margin-top: 810px;
+    }
+}
+
+@media (max-width: 539px) {
+    .info_main_info .info_info {
+        height: 300px;
+    }
+    .footer {
+        margin-top: 840px;
+    }
+}
+
+.info_main {
+    height: calc(100% - 84px);
+    margin-bottom: 20px;
+}
+.info_main .row {
+    height: 100%;
+}
+.info_main .row > div {
+    height: 100%;
+    margin-bottom: 20px;
+}
+.info_main_map input {
+    height: 40px;
+    margin-bottom: 20px;
+    display: none;
+}
+.info_main_map .info_btn {
+    display: none;
+}
+.info_main_map #map {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.info_main_info {
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr;
+    gap: 20px;
+}
+.info_main_map,
+.info_main_info div {
+    position: relative;
+}
+.info_main_map input,
+.info_main_info input {
+    width: calc(100% - 50px);
+}
+.info_btn {
+    height: 40px;
+    width: 40px;
+    border: solid 2px rgba(192, 192, 192, 0.5);
+    border-radius: 5px;
+}
+.info_btn:hover {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.info_btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.info_main_info button svg {
+    height: 24px;
+    width: 24px;
+    fill: currentColor;
+}
+.info_img {
+    position: relative;
+    overflow: hidden;
+}
+.info_img > img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+.info_info {
+    background-color: #e1e1e1;
+    border-radius: 5px;
+}
+.info_info ul {
+    width: 100%;
+    padding: 20px;
+}
+.info_info ul li {
+    font-size: 1.2em;
+    word-break: break-all;
+}

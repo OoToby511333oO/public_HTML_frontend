@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台中市公共圖書館 - 首頁</title>
+    <link rel="shortcut icon" href="./Images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./Funcs/index.js"></script>
+    <script src="./Funcs/menu.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header_title">
+            <a href="./index.html"><img src="./Images/logo.png" alt="logo.png"></a>
+        </div>
+        <div class="header_nav">
+            <ul class="nol">
+                <li style="border-left: solid 1px gray;"><a href="./index.html">首頁</a></li>
+                <li><a href="./MyRoutes/info.html">館區資訊</a></li>
+                <li><a href="./MyRoutes/rule.html">公共規章</a></li>
+                <li><a href="./MyRoutes/about.html">關於我們</a></li>
+            </ul>
+        </div>
+        <div class="header_menu">
+            <svg viewBox="0 0 24 24">
+                <path d="M2.425 18.95V15.8h19.15v3.15Zm0-5.375v-3.15h19.15v3.15Zm0-5.375V5.05h19.15V8.2Z"/>
+            </svg>
+        </div>
+        <div class="header_menu_dropdown">
+            <a href="./index.html" style="margin-top: 5px;">首頁</a>
+            <hr>
+            <a href="./MyRoutes/info.html">館區資訊</a>
+            <hr>
+            <a href="./MyRoutes/rule.html">公共規章</a>
+            <hr>
+            <a href="./MyRoutes/about.html">關於我們</a>
+        </div>
+    </div>
+    <div class="main_img">
+        <ul id="main_img_ul" class="nol">
+            <li class="slide activate">
+                <img src="./Images/lib1.jpg" alt="lib1">
+            </li>
+        </ul>
+    </div>
+    <div class="main_menu">
+        <a href="./MyRoutes/info.html"><div>
+            <label>| 館區資訊</label>
+            <img src="./Images/lib1.jpg" alt="">
+        </div></a>
+        <a href="./MyRoutes/rule.html"><div>
+            <label>公共規章 |</label>
+            <img src="./Images/lib1.jpg" alt="">
+        </div></a>
+        <a href="./MyRoutes/about.html"><div>
+            <label>| 關於我們</label>
+            <img src="./Images/lib1.jpg" alt="">
+        </div></a>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col-sm-6"><a href="https://www.taichung.gov.tw/"><img src="./Images/taichung_gov.png" alt="taichung_gov.png"></a></div>
+            <div class="col-sm-6"><a href="https://www.culture.taichung.gov.tw/"><img src="./Images/taichung_bc.png" alt="taichung_bc.png"></a></div>
+        </div>
+        <div class="footer_end">
+            <label>Copyright &copy; 2022 何孟勳 林鴻璋</label>
+        </div>
+        <div style="height: 0px;"></div>
+    </div>
+</body>
+</html>
